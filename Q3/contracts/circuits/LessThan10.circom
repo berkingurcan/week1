@@ -6,6 +6,7 @@ template LessThan10() {
     signal input in;
     signal output out;
 
+    // 2**32 kullanarak LessThan templatei için Lessthanin input signal aralarındaki farkı 2**32 den az olmalı
     component lt = LessThan(32); 
 
     lt.in[0] <== in;
